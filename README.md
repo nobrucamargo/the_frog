@@ -1,4 +1,4 @@
-![Logo do IFSC](/images/florianopolis_horizontal_marca2015_PNG.png)
+<img src="images/florianopolis_horizontal_marca2015_PNG.png" width="50%">
 
 # THE FROG
 ## Implementação do clássico jogo "The Frog" utilizando programação orientada a objeto, através da linguagem de programação C++.
