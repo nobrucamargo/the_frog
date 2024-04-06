@@ -23,6 +23,16 @@ Sendo o desenvolvimento dos casos de uso a primeira etapa da análise orientada 
   
 Onde os substantivos, em negrito, são os candidatos a atores/objetos/classes e os verbos/características em itálico são os candidadtos à métodos e atributos dos objetos. a primeira parte do rascunho original é mostrado na figura abaixo.
 
+<br><div align="center">
+<img src="images/casos_de_uso.jpeg" width="50%">
+<div/>
+
+<p align="left">
+Apartir do rascunho principal de caso de uso, mostrado acima, foi construído uma tabela formal de casos de uso, a qual pode ser vista asseguir.
+<p/>
+
 <div align="center">
-![CASOS DE USO](images/casos_de_uso.jpeg)
+
+[Retroceder](README.md) | [Avançar](projeto.md)
+
 <div/>
