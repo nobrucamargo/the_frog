@@ -1,7 +1,7 @@
 <img src="images/florianopolis_horizontal_marca2015_PNG.png" width="50%" style="background-color: silver; padding: 10px">
 
 # THE FROG
-## Implementação do clássico jogo "The Frog" utilizando programação orientada a objeto, através da linguagem de programação C++.
+## Implementação do clássico jogo "The Frogger" utilizando programação orientada a objeto, através da linguagem de programação C++.
 > Repositório destinado para fins de aprendizado através da UC PRG22107 - Programação orienta a objeto.<br>
 Aluno: Bruno Camargo<br>
 Professor: Hugo Marcondes
