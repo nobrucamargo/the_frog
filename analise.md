@@ -55,7 +55,17 @@ Apartir do rascunho principal de caso de uso, mostrado acima, foi construído um
 | Casos de uso | **`DOMÍNIO DO PROBLEMA`** | Diagrama de iteração | Diagrama de classes |
 | ------------ | ------------------------- | -------------------- | ------------------- |
 
-<br>Com os casos de uso descritos textualmente, desenvolveu-se o seguinte pseudodiagrama de classes, afim de identificar os conceitos(objetos) e atributos relevantes no domínio do problema.
+<br>Com os casos de uso descritos textualmente, desenvolveu-se o seguinte pseudo diagrama de classes, afim de identificar os conceitos(objetos/classes) e atributos relevantes no domínio do problema. 
+
+<br>
+
+<div align="center">
+
+<img src="images/the_frogger_problem_domain.jpg" width="75%">
+
+</div>
+
+<br> Onde a classe "Componentes dinâmicos" representa todos os objetos que se movem e a classe "Componentes estáticos" representam os componentes estáticos. Esse diagama é inicial e será alterado, servindo apenas para visualizar o domínio do problema.
 
 <div align="center">
 
