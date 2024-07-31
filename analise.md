@@ -1,6 +1,6 @@
 # Análise orientada a objeto
 > [!NOTE]
-> <p>A <strong>análise</strong> orientada a objeto consiste nas duas primeiras etapas da tabela abaixo, a definição de casos de uso e a definição do domínio do problema. </span></p>
+> <p>A <strong>análise</strong> orientada a objeto consiste nas duas primeiras etapas da tabela abaixo, a definição de casos de uso e a definição do domínio do problema.</p>
 | Casos de uso | Domínio do problema | Diagrama de iteração | Diagrama de classes |
 | ------------ | ------------------- | -------------------- | ------------------- |
 
