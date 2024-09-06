@@ -1222,10 +1222,10 @@ compiler_moc_header_make_all: moc_Stream.cpp moc_gamedata.cpp moc_gamescreen.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_Stream.cpp moc_gamedata.cpp moc_gamescreen.cpp moc_mainscreen.cpp moc_movablecomponent.cpp moc_startscreen.cpp
 moc_Stream.cpp: ../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qglobal.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtversionchecks.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtconfiginclude.h \
@@ -1270,13 +1270,6 @@ moc_Stream.cpp: ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtresource.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qttranslation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qversiontagging.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtmetamacros.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qfunctionaltools_impl.h \
@@ -1329,6 +1322,23 @@ moc_Stream.cpp: ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qscopeguard.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject_impl.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbindingstorage.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../froggerconfig.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
+		../../movablecomponent.h \
+		../../component.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtextstream.h \
@@ -1359,16 +1369,6 @@ moc_Stream.cpp: ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qimage.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpixelformat.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
-		../../froggerconfig.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
-		../../movablecomponent.h \
-		../../component.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
@@ -1382,6 +1382,7 @@ moc_Stream.cpp: ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariantanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qabstractanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		moc_predefs.h \
 		/opt/Qt/6.7.2/gcc_64/libexec/moc
@@ -1662,7 +1663,17 @@ moc_gamescreen.cpp: ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qendian.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpen.h \
 		../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../froggerconfig.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
+		../../movablecomponent.h \
+		../../component.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
@@ -1676,16 +1687,6 @@ moc_gamescreen.cpp: ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qhash.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpainterpath.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
-		../../froggerconfig.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
-		../../movablecomponent.h \
-		../../component.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QPropertyAnimation \
@@ -1693,6 +1694,7 @@ moc_gamescreen.cpp: ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariantanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qabstractanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		../../controlablecomponent.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \
@@ -1705,7 +1707,6 @@ moc_gamescreen.cpp: ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qinputdevice.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QList \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRect \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QSize \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QSizeF \
@@ -2276,7 +2277,6 @@ moc_mainscreen.cpp: ../../mainscreen.h \
 		../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
 		../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
 		../../movablecomponent.h \
@@ -2284,6 +2284,7 @@ moc_mainscreen.cpp: ../../mainscreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QPropertyAnimation \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		../../controlablecomponent.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \
@@ -2693,10 +2694,10 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 Stream.o: ../../Stream.cpp ../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qglobal.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtversionchecks.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtconfiginclude.h \
@@ -2741,13 +2742,6 @@ Stream.o: ../../Stream.cpp ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtresource.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qttranslation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qversiontagging.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtmetamacros.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qfunctionaltools_impl.h \
@@ -2800,6 +2794,23 @@ Stream.o: ../../Stream.cpp ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qscopeguard.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qobject_impl.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbindingstorage.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../froggerconfig.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
+		../../movablecomponent.h \
+		../../component.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtextstream.h \
@@ -2830,16 +2841,6 @@ Stream.o: ../../Stream.cpp ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qimage.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpixelformat.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
-		../../froggerconfig.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
-		../../movablecomponent.h \
-		../../component.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
@@ -2853,6 +2854,7 @@ Stream.o: ../../Stream.cpp ../../Stream.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariantanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qabstractanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Stream.o ../../Stream.cpp
 
@@ -3460,7 +3462,17 @@ gamescreen.o: ../../gamescreen.cpp ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qendian.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpen.h \
 		../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../froggerconfig.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
+		../../movablecomponent.h \
+		../../component.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
@@ -3474,16 +3486,6 @@ gamescreen.o: ../../gamescreen.cpp ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qhash.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qpainterpath.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qrandom.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/qbasictimer.h \
-		../../froggerconfig.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QtMath \
-		../../movablecomponent.h \
-		../../component.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QPropertyAnimation \
@@ -3491,6 +3493,7 @@ gamescreen.o: ../../gamescreen.cpp ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qvariantanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qabstractanimation.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		../../controlablecomponent.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \
@@ -3503,7 +3506,6 @@ gamescreen.o: ../../gamescreen.cpp ../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qinputdevice.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QList \
-		/opt/Qt/6.7.2/gcc_64/include/QtCore/QObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRect \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QSize \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QSizeF \
@@ -4073,7 +4075,6 @@ main.o: ../../main.cpp /opt/Qt/6.7.2/gcc_64/include/QtWidgets/QApplication \
 		../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
 		../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
 		../../movablecomponent.h \
@@ -4081,6 +4082,7 @@ main.o: ../../main.cpp /opt/Qt/6.7.2/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QPropertyAnimation \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		../../controlablecomponent.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \
@@ -4634,7 +4636,6 @@ mainscreen.o: ../../mainscreen.cpp ../../mainscreen.h \
 		../../gamescreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
 		../../Stream.h \
-		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
 		../../movablecomponent.h \
@@ -4642,6 +4643,7 @@ mainscreen.o: ../../mainscreen.cpp ../../mainscreen.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QVector2D \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QPropertyAnimation \
+		/opt/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsObject \
 		/opt/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
 		../../controlablecomponent.h \
 		/opt/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \

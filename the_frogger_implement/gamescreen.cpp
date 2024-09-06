@@ -46,7 +46,7 @@ GameScreen::GameScreen(const int &x, int const &y, QObject *parent) : QGraphicsS
 
                     /*-----Cria as estradas que incluem os npcs-------*/
     // Iniciar speed conforme gameData(dados do jogador)
-    int speed=11/1; // Dado em passo/s
+    int speed=11/10; // Dado em passo/s
     for (int i=3; i>=0; i--){
         streets[i] = new Stream(speed, 11, scenario->pos().y()+frogger::BASE_PASSO_Y*(9-i), scenario, this);
     }
