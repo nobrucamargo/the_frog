@@ -9,6 +9,7 @@ the_frogger_implement/*.pro.user
 the_frogger_implement/*.pro.user.*
 the_frogger_implement/*.qbs.user
 the_frogger_implement/*.qbs.user.*
+the_frogger_implement/*.pro
 
 # Arquivos de configuração do Qt Creator
 the_frogger_implement/.DS_Store
