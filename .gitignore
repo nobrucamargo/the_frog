@@ -1,2 +1,38 @@
 # Ignorar pasta temporario
 tmp/
+
+# Diretórios de compilação
+the_frogger_implement/build-*/
+
+# Arquivos gerados pelo Qt Creator
+the_frogger_implement/*.pro.user
+the_frogger_implement/*.pro.user.*
+the_frogger_implement/*.qbs.user
+the_frogger_implement/*.qbs.user.*
+the_frogger_implement/*.pro
+
+# Arquivos de configuração do Qt Creator
+the_frogger_implement/.DS_Store
+the_frogger_implement/.idea/
+the_frogger_implement/*.swp
+the_frogger_implement/*.swo
+the_frogger_implement/*.bak
+the_frogger_implement/*.tmp
+the_frogger_implement/*~
+
+# Arquivos de compilação do Qt
+the_frogger_implement/*.o
+the_frogger_implement/*.obj
+the_frogger_implement/*.so
+the_frogger_implement/*.a
+the_frogger_implement/*.lib
+the_frogger_implement/*.dll
+the_frogger_implement/*.exe
+the_frogger_implement/*.app
+the_frogger_implement/*.dSYM
+
+# Outras pastas e arquivos específicos do projeto
+the_frogger_implement/tmp/
+the_frogger_implement/cache/
+the_frogger_implement/logs/
+

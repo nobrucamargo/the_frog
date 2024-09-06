@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images_design/sapo_triste.jpeg</file>
+        <file>images_design/logo.png</file>
+        <file>images_design/icon.webp</file>
+        <file>images_design/start_button3.png</file>
+        <file>images_design/vitoria_regea.png</file>
+        <file>images_design/gamescreen.jpg</file>
+        <file>images_design/bus_yellow_pixel.png</file>
+        <file>images_design/forklift_pixel.png</file>
+        <file>images_design/delivery_pixel.png</file>
+        <file>images_design/bus_red_pixel.png</file>
+    </qresource>
+</RCC>
