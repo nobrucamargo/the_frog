@@ -1,15 +1,22 @@
-#ifndef MOVABLE_COMPONENT_H
-#define MOVABLE_COMPONENT_H
+#ifndef CONTROLABLECOMPONENT_H
+#define CONTROLABLECOMPONENT_H
 
+#include "froggerconfig.h"
 #include "component.h"
+#include <QKeyEvent>
+#include <QTimer>
 
-class movableCompent : public component{
+// Herda QWidgets, recebendo a habilidade de interação gráfica, como eventos de teclado
+
+class ControlableComponent : public Component{
 private:
 
 public:
-    movableCompent();
-    void keyPressEvent(QKeyEvent *event);
+    explicit ControlableComponent(const QPixmap &skin, QGraphicsItem *parent = nullptr);
+    ~ControlableComponent();
+    // sobreescreve o slot de QWidgets
+    void keyPressEvent(QKeyEvent *event) override;
 };
 
 
-#endif // MOVABLE_COMPONENT_H
+#endif // CONTROLABLECOMPONENT_H
